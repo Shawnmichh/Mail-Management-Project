@@ -1,0 +1,137 @@
+:root {
+  --background-color: #f7f9fc;
+  --primary-color: #4f46e5;
+  --secondary-color: #9333ea;
+  --text-color: #333;
+  --border-color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.empty-messages {
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.no-messages {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.email-chat-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.inbox-header {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-align: center;
+}
+
+.inbox-title {
+  font-size: 1.5rem;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.message-card:hover {
+  transform: scale(1.02);
+}
+
+.message-body {
+  display: flex;
+  gap: 1rem;
+}
+
+.message-content {
+  flex-grow: 1;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-sender {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.message-date {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.email-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.email-body-card {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.reply-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reply-input {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+}
+
+.send-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: var(--secondary-color);
+}
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
